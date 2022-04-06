@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona | Форма отзыва</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/logo.png" width="185" height="96" alt="Город Седона.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Главное меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a  href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a  href="https://htmlacademy.ru/">
+                Html Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Форма отзыва</h1>
+      <header class="header-catalog">
+        <img class="header-catalog__text" src="img/sedona.svg" width="229" height="39" alt="Седона.">
+      </header>
+      <section class="form">
+        <h2 class="form__title">Оставьте свой отзыв</h2>
+        <p class="form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form class="form__comment" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="field-group">
+            <span class="field-group__title">Представьтесь:</span>
+            <p class="field-group__line">
+              <label for="comment-name">Имя*:</label>
+              <input type="text" id="comment-name" name="comment-name" placeholder="Введите имя" value="Пётр" required>
+            </p>
+            <p class="field-group__line">
+              <label for="comment-surname">Фамилия:</label>
+              <input type="text" id="comment-surname" name="comment-surname" placeholder="Введите фамилию" value="Пустота">
+            </p>
+            <p class="field-group__line">
+              <label for="comment-patronymic">Отчество:</label>
+              <input type="text" id="comment-patronymic" name="comment-patronymic" placeholder="Введите отчество" value="Викторович">
+            </p>
+          </div>
+          <div class="field-group">
+            <h3 class="field-group__title">Контактная информация</h3>
+            <p class="field-group__line">
+              <label for="comment-phone">Контактный телефон*:</label>
+              <input placeholder="Введите телефон" type="tel" name="comment-phone" id="comment-phone" required>
+            </p>
+            <p class="field-group__line">
+            <label class="field-input" for="comment-email">Электронная почта*:</label>
+            <input placeholder="Введите email" type="email" name="comment-email" id="comment-email" required>
+            </p>
+          </div>
+          <fieldset class="filter-catalog-group">
+            <legend class="filter-catalog-group__title">Ваше общее впечатление:</legend>
+            <ul class="filter-catalog-group__list">
+              <li class="filter-catalog-group__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="positive" value="yes" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Скорее положительное</span>
+                </label>
+              </li>
+              <li class="filter-catalog-group__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="negative" value="no">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li class="filter-catalog-group__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="difficult" value="no">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-catalog-group">
+            <legend class="filter-catalog-group__title">Посещенные достопримечательности:</legend>
+            <ul class="filter-catalog-group__list">
+              <li class="filter-catalog-group__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="bridge" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Мост дьявола</span>
+                </label>
+              </li>
+              <li class="filter-catalog-group__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="mountain" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Гора-колокол</span>
+                </label>
+              </li>
+              <li class="filter-catalog-group__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="slide-park" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Слайд-парк</span>
+                </label>
+              </li>
+              <li class="filter-catalog-group__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="checkbox" name="red rocks">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Красные скалы</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="field-group">
+          <h3 class="field-group__title">Опишите свои эмоции:</h3>
+          <textarea class="field-group__emotions" placeholder="Опишите подробно все свои восторги" name="comment-emotions" id="comment-emotions"></textarea>
+          </div>
+          <button class="button form__button" type="submit">Отправить отзыв</button>
+        </form>
+        <small>
+          * — обязательные поля
+        </small>
+        </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="footer-hashtag">
+          <a href="#">
+            <span class="footer-hashtag__title">#Visitsedona</span>
+          </a>
+        </div>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+          <div class="main-footer__copyright copyright">
+            <h3 class="copyright__text">Разработано</h3>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="img/logo-htmlacademy.svg" alt="Логотип Академии.">
+            </a>
+          </div>
+      </div>
+    </footer>
+  </body>
+</html>
