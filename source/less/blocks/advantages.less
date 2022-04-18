@@ -5,7 +5,7 @@
   padding: 30px 18px;
 }
 
-.advantages__list{
+.advantages__list {
   list-style: none;
   padding: 0;
 }
@@ -16,10 +16,34 @@
 
 .advantages__item-city {
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    background-image: url("../img/advantages-image-1-tablet.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    background-image: url("../img/advantages-image-1-desktop.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__item-bridge {
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    background-image: url("../img/advantages-image-2-tablet.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    background-image: url("../img/advantages-image-2-desktop.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__title {
@@ -27,15 +51,20 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   padding-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 21px;
+  }
 }
 
 .advantages__item-description {
   text-transform: uppercase;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 49px 18px 40px 18px;
   text-align: center;
   margin: 0;
@@ -52,5 +81,33 @@
 
 .advantages__list-continuation {
   list-style: none;
-  background-color: #EEEEEE;;
+  background-color: #eeeeee;
+  padding: 0;
+}
+
+.advantages__list-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.advantages__item-wrapper {
+  @media (min-width: @desktop-width) {
+  flex-direction: row-reverse;
+  }
+}
+
+.advantages__item-wrapper-1 {
+  @media (min-width: @tablet-width) {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  }
+}
+
+.advantages__item-wrapper-2 {
+  @media (min-width: @tablet-width) {
+  display: flex;
+  flex-direction: row-reverse;
+  }
 }

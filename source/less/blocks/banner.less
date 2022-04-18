@@ -2,11 +2,23 @@
   background-image: url("../img/banner.png");
   background-repeat: no-repeat;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+  }
 }
 
 .banner__image {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 60%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 40%;
+  }
 }
 
 .banner__description {

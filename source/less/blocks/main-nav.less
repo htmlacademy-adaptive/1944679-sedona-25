@@ -3,11 +3,23 @@
   padding: 0 50px;
 }
 
-.site-list{
+.main-nav__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.site-list {
   margin: 0;
   padding: 0;
   width: 100%;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }
 
 .site-list__item {
@@ -20,5 +32,11 @@
 
 .site-list__link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
