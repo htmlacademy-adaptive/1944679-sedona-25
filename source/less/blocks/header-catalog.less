@@ -1,11 +1,23 @@
 .header-catalog {
-  background-image: url("../img/header-catalog-mobile.png");
+  background-image: url("../img/header-dekstop.png");
   background-repeat: no-repeat;
-  width: 320px;
-  height: 214px;
-  outline: 5px solid #e74d12;
+  width: 100%;
+  height: 270px;
 }
 
 .header-catalog__text {
-  padding: 85px 45px;
+  display: block;
+  margin: 0 auto;
+  width: 72%;
+  height: auto;
+  padding-top: 90px;
+
+  @media (min-width: @tablet-width) {
+    width: 60%;
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 38%;
+  }
 }
