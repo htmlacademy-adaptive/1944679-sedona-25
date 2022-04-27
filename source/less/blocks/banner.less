@@ -1,11 +1,27 @@
 .banner__background {
+  position: relative;
   background-image: url("../img/banner.png");
   background-repeat: no-repeat;
-  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  z-index: -1;
 
   @media (min-width: @tablet-width) {
     height: 518px;
+    background-position: 60%;
   }
+}
+
+.banner__background::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right:0;
+  width: 100%;
+  height: 57px;
+  background-image: url("../img/corners-banner.svg");
+  background-size: cover;
+  background-position: 50%;
 }
 
 .banner__image {
@@ -14,6 +30,7 @@
 
   @media (min-width: @tablet-width) {
     width: 60%;
+    padding-top: 77px;
   }
 
   @media (min-width: @desktop-width) {
@@ -23,6 +40,7 @@
 
 .banner__description {
   display: block;
+  padding-top: 32px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
