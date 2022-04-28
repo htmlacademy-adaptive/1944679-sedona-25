@@ -1,5 +1,16 @@
+.main-header {
+  position: relative;
+  background-color: #ffffff;
+  height: 56px;
+}
+
 .main-header__logo {
   width: 185px;
   display: block;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    z-index: 5;
+  }
 }

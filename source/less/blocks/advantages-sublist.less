@@ -5,6 +5,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding: 0 36px;
   }
 }
 
@@ -23,19 +24,26 @@
 
 .advantages-sublist__title--house::before {
   content: url("../img/icon-house.svg");
+  padding-right: 8px;
 }
 
 .advantages-sublist__title--food::before {
   content: url("../img/icon-food.svg");
+  padding-right: 8px;
 }
 
 .advantages-sublist__title--presents::before {
   content: url("../img/icon-presents.svg");
+  padding-right: 8px;
 }
 
 .advantages-sublist__description {
   color: @colortext;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 46px;
+  }
 }
 
 .advantages-sublist__item {

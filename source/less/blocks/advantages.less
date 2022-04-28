@@ -3,11 +3,73 @@
   color: @colortext;
   text-align: center;
   padding: 30px 18px;
+  margin: 0;
 }
 
 .advantages__list {
+  counter-reset: myCounter;
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.advantages__item-text {
+  position: relative;
+}
+
+.advantages__item-text::before {
+  position: absolute;
+  top: 8vh;
+  left: 43%;
+  counter-increment: myCounter;
+  content: "\2014 \00A0 № " counter(myCounter) " \2014";
+  color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    left: 39%;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 42%;
+    top: 7vh;
+  }
+}
+
+.advantages__list-continuation {
+  counter-reset: myCounter2 2;
+  list-style: none;
+  background-color: #eeeeee;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding: 0 36px;
+  }
+}
+
+.advantages__item-continuation {
+  position: relative;
+  margin: 0 18px;
+  border-bottom: 1px solid #D6D6D6;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    margin: 0;
+  }
+}
+
+.advantages__item-continuation::before {
+  position: absolute;
+  top: 8vh;
+  left: 43%;
+  counter-increment: myCounter2 1;
+  content: "\2014 \00A0 № " counter(myCounter2) " \2014";
+  color: @colortext;
+
+  @media (min-width: @tablet-width) {
+    left: 41%;
+  }
 }
 
 .advantages__item-text {
@@ -53,6 +115,8 @@
   line-height: 26px;
   color: #ffffff;
   text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
   padding-top: 30px;
 
   @media (min-width: @tablet-width) {
@@ -65,24 +129,26 @@
   text-transform: uppercase;
   font-weight: 400;
   color: #ffffff;
-  padding: 49px 18px 40px 18px;
+  padding: 32px 18px 40px 18px;
   text-align: center;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 62px;
+  }
 }
 
 .advantages__title--color {
   color: #000000;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 42px;
+  }
 }
 
 .advantages__item-description--color {
   color: @colortext;
-}
-
-.advantages__list-continuation {
-  list-style: none;
-  background-color: #eeeeee;
-  padding: 0;
 }
 
 .advantages__list-wrapper {
