@@ -1,7 +1,35 @@
 .copyright {
+  cursor: pointer;
   text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+
+  &:focus {
+    outline: 2px solid #0b5ba3;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: auto;
+  }
 }
 
 .copyright__text {
   text-transform: uppercase;
+}
+
+.copyright:hover .copyright__text {
+    color: #81B3D2;
+  }
+
+.copyright:hover .copyright__logo {
+  fill: #81B3D2;
+}
+
+.copyright:active .copyright__text {
+  color: #B3B3B3;
+}
+
+.copyright:active .copyright__logo {
+  fill: #B3B3B3;
 }
