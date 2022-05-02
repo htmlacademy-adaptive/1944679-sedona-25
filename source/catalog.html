@@ -9,32 +9,32 @@
   <body class="page__body">
     <div class="container">
       <header class="main-header">
-        <a class="main-header__logo" href="index.html">
+        <a class="main-header__logo" href="index.html" tabindex="1">
           <img src="img/logo.png" width="185" height="96" alt="Город Седона.">
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Главное меню</span>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link" href="index.html">
+                <a class="site-list__link" href="index.html" tabindex="1">
                   Главная
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--current">
+                <a class="site-list__link site-list__link--current" tabindex="1">
                   Фото и видео
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="form.html">
+                <a class="site-list__link" href="form.html" tabindex="1">
                   Форма отзыва
                 </a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/">
+                <a class="site-list__link" href="https://htmlacademy.ru/" tabindex="1">
                   Html Academy
                 </a>
               </li>
@@ -116,39 +116,39 @@
           </section>
           <section class="gallery__video">
             <h2 class="visually-hidden">Видео</h2>
-            <span class="gallery__title gallery__title--video">Всё ещё сомневаетесь?</span>
+            <span class="gallery__title gallery__title--video">Все еще сомневаетесь?</span>
             <p class="gallery__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <img class="gallery__demonstration" width="280" height="177" src="img/mobile-gallery-video.png">
+            <img class="gallery__demonstration" width="280" height="177" src="img/mobile-gallery-video.png" tabindex="1">
           </section>
         </section>
       </main>
       <footer class="main-footer">
         <div class="main-footer__wrapper">
           <div class="footer-hashtag">
-            <a class="footer-hashtag__link" href="#">
+            <a class="footer-hashtag__link" href="#" tabindex="1">
               <span class="footer-hashtag__title">#Visitsedona</span>
             </a>
           </div>
           <div class="main-footer__social social">
             <ul class="social__list">
-              <li class="social__item social__item--vkontakte">
+              <li class="social__item social__item--vkontakte" tabindex="1">
                 <a class="social__link" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Вконтакте</span>
                 </a>
               </li>
-              <li class="social__item social__item--telegram">
+              <li class="social__item social__item--telegram" tabindex="1">
                 <a class="social__link" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Телеграм</span>
                 </a>
               </li>
-              <li class="social__item social__item--youtube">
+              <li class="social__item social__item--youtube" tabindex="1">
                 <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Ютуб</span>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="main-footer__copyright copyright">
+          <div class="main-footer__copyright copyright" tabindex="1">
             <span class="copyright__text">Разработано</span>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <img src="img/logo-htmlacademy.svg" alt="Логотип Академии.">
@@ -157,5 +157,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
