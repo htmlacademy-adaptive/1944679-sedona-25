@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sedona | Фото и видео</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
   </head>
   <body class="page__body">
     <div class="container">
       <header class="main-header">
         <a class="main-header__logo" href="index.html" tabindex="1">
-          <img src="img/logo.png" width="185" height="96" alt="Город Седона.">
+          <img src="img/logo.svg" width="185" height="96" alt="Город Седона.">
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
@@ -42,7 +57,7 @@
           </div>
         </nav>
       </header>
-      <main class="main-container">
+      <main class="main-container main-catalog">
         <header class="header-catalog">
           <img class="header-catalog__text" src="img/text-sedona.svg" width="229" height="39" alt="Седона.">
         </header>
@@ -54,7 +69,11 @@
             <ul class="gallery__list">
               <li class="gallery__item gallery__item--1">
                 <a class="gallery__link" href="#">
-                  <img class="gallery__image" src="img/mobile-gallery-1.png" width="280" height="280" alt="Дорога в закатном свете.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/desktop-gallery-1.png 1x, img/desktop-gallery-1@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/tablet-gallery-1.png 1x, img/tablet-gallery-1@2x.png 2x">
+                    <img class="gallery__image gallery__image-1" src="img/mobile-gallery-1.png" width="280" height="280" srcset="img/mobile-gallery-1@2x.png 2x" alt="Дорога в закатном свете.">
+                  </picture>
                 </a>
                 <div class="gallery__description-foto gallery__description-foto--1">
                   <div class="gallery__foto-name">
@@ -69,7 +88,11 @@
               </li>
               <li class="gallery__item">
                 <a class="gallery__link" href="#">
-                  <img class="gallery__image" src="img/mobile-gallery-2.png" width="280" height="280" alt="Кактус.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/desktop-gallery-2.png 1x, img/desktop-gallery-2@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/tablet-gallery-2.png 1x, img/tablet-gallery-2@2x.png 2x">
+                    <img class="gallery__image" src="img/mobile-gallery-2.png" width="280" height="280" srcset="img/mobile-gallery-2@2x.png 2x" alt="Кактус.">
+                  </picture>
                 </a>
                 <div class="gallery__description-foto gallery__description-foto--position">
                   <div class="gallery__foto-name">
@@ -84,7 +107,11 @@
               </li>
               <li class="gallery__item">
                 <a class="gallery__link" href="#">
-                  <img class="gallery__image" src="img/mobile-gallery-3.png" width="280" height="280" alt="Дорога в горах.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/desktop-gallery-3.png 1x, img/desktop-gallery-3@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/tablet-gallery-3.png 1x, img/tablet-gallery-3@2x.png 2x">
+                    <img class="gallery__image" src="img/mobile-gallery-3.png" width="280" height="280" srcset="img/mobile-gallery-3@2x.png 2x" alt="Дорога в горах.">
+                  </picture>
                 </a>
                 <div class="gallery__description-foto gallery__description-foto--position">
                   <div class="gallery__foto-name">
@@ -99,7 +126,11 @@
               </li>
               <li class="gallery__item">
                 <a class="gallery__link" href="#">
-                  <img class="gallery__image" src="img/mobile-gallery-4.png" width="280" height="280" alt="Мост дьявола.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/desktop-gallery-4.png 1x, img/desktop-gallery-4@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/tablet-gallery-4.png 1x, img/tablet-gallery-4@2x.png 2x">
+                    <img class="gallery__image" src="img/mobile-gallery-4.png" width="280" height="280" srcset="img/mobile-gallery-4@2x.png 2x" alt="Мост дьявола.">
+                  </picture>
                 </a>
                 <div class="gallery__description-foto gallery__description-foto--position">
                   <div class="gallery__foto-name">
@@ -118,7 +149,11 @@
             <h2 class="visually-hidden">Видео</h2>
             <span class="gallery__title gallery__title--video">Все еще сомневаетесь?</span>
             <p class="gallery__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <img class="gallery__demonstration" width="280" height="177" src="img/mobile-gallery-video.png" tabindex="1">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop.png 1x, img/video-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x">
+              <img class="gallery__demonstration" width="280" height="177" src="img/video-mobile.png" srcset="img/video-mobile@2x.png 2x" alt="Видео Седоны." tabindex="1">
+            </picture>
           </section>
         </section>
       </main>

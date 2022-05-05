@@ -1,14 +1,34 @@
 .banner__background {
   position: relative;
-  background-image: url("../img/banner.png");
+  background-color: #000000;
+  background-image: url("../img/banner-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
   z-index: -1;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/banner-mobile@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
+    background-image: url("../img/banner-tablet.png");
+    background-position: 50%;
     height: 518px;
-    background-position: 60%;
+    background-position: 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/banner-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/banner-desktop.png");
+    background-position: 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/banner-desktop@2x.png");
+    }
   }
 }
 
@@ -29,7 +49,8 @@
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    width: 60%;
+    width: 461px;
+    height: auto;
     padding-top: 77px;
   }
 
