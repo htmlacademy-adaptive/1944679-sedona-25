@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sedona | Главная</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
   </head>
   <body class="page__body">
     <div class="container">
       <header class="main-header">
         <a class="main-header__logo" tabindex="1">
-          <img class="logo-image" src="img/logo.png" width="185" height="96" alt="Город Седона.">
+          <img class="logo-image" src="img/logo.svg" width="185" height="96" alt="Город Седона.">
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
@@ -62,7 +77,11 @@
                     <h3 class="advantages__title">Настоящий городок</h3>
                     <p class="advantages__item-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
                   </div>
-                  <img class="advantages__item-city" src="img/advantages-image-1-tablet.png" width="320" height="260" alt="Здание города.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/advantages-1-desktop.png 1x, img/advantages-1-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/advantages-1-tablet.png 1x, img/advantages-1-tablet@2x.png 2x">
+                    <img class="advantages__item-city" src="img/advantages-1-mobile.png" width="320" height="260" srcset="img/advantages-1-mobile@2x.png 2x" alt="Здание города.">
+                  </picture>
                 </div>
                 <ul class="advantages-sublist">
                   <li class="advantages-sublist__item">
@@ -85,7 +104,11 @@
                     <h3 class="advantages__title">Там есть мост дьявола</h3>
                     <p class="advantages__item-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                   </div>
-                  <img  class="advantages__item-bridge" src="img/advantages-image-2-mobile.png" width="320" height="260" alt="Мост дьявола.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/advantages-2-desktop.png 1x, img/advantages-2-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/advantages-2-tablet.png 1x, img/advantages-2-tablet@2x.png 2x">
+                    <img  class="advantages__item-bridge" src="img/advantages-2-mobile.png" width="320" height="260" srcset="img/advantages-2-mobile@2x.png 2x" alt="Мост дьявола.">
+                  </picture>
                 </div>
               </li>
             </ol>
