@@ -207,11 +207,33 @@
           <div class="main-footer__copyright copyright" tabindex="1">
             <span class="copyright__text">Разработано</span>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <img src="img/logo-htmlacademy.svg" alt="Логотип Академии.">
+              <svg class="copyright__logo" width="28" height="33" viewBox="0 0 28 33" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.15.25h-.1L.5 1.59v23.63l13.55 7.66 13.45-7.66V1.6L14.15.25ZM25.6 11.83l-11.54-6.5v-.1h-.1l-.1-.1v.1L2.4 11.83V3.22l11.54-1.15 11.64 1.15v8.6ZM13.95 6.76l11.54 6.4-4.51 2.5-7.13-4.02v1.33l5.92 3.35-.9.48-5.02-2.87v1.34l3.81 2.2-.8.48-3.01-1.72v1.34l1.9 1.05-1.8 1.05-11.44-6.4 11.44-6.51ZM2.41 14.7l11.44 6.5v.96l-7.93-4.5V19l8.03 4.6v1.05l-8.03-4.5v1.34l8.03 4.6 8.13-4.7v-4.97l3.41-1.91v9.56l-11.54 6.6-11.54-6.5V14.7Z"/>
+              </svg>
             </a>
           </div>
         </div>
       </footer>
+      <div class="modal-container modal-container--close-error">
+        <div class="modal-error modal">
+          <h2 class="modal__title">Что-то пошло не так!</h2>
+            <p class="modal__text">
+              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+            </p>
+            <button class="modal-error__button button" type="submit">ok</button>
+        </div>
+      </div>
+      <div class="modal-container modal-container--close-review">
+        <div class="modal-review modal">
+          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+          <p class="modal__text">
+            Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+          </p>
+          <div class="modal-review__button-wrapper">
+          <button class="modal-review__button button" type="submit">закрыть окно</button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/script.js"></script>
   </body>

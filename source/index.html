@@ -78,22 +78,34 @@
                     <p class="advantages__item-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
                   </div>
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/advantages-1-desktop.png 1x, img/advantages-1-desktop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/advantages-1-tablet.png 1x, img/advantages-1-tablet@2x.png 2x">
-                    <img class="advantages__item-city" src="img/advantages-1-mobile.png" width="320" height="260" srcset="img/advantages-1-mobile@2x.png 2x" alt="Здание города.">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages-1-desktop.webp 1x, img/advantages-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages-1-tablet.webp 1x, img/advantages-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/advantages-1-mobile.webp 1x, img/advantages-1-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/advantages-1-desktop.jpg 1x, img/advantages-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/advantages-1-tablet.jpg 1x, img/advantages-1-tablet@2x.jpg 2x">
+                    <img class="advantages__item-city" src="img/advantages-1-mobile.jpg" width="320" height="260" srcset="img/advantages-1-mobile@2x.jpg 2x" alt="Здание города.">
                   </picture>
                 </div>
                 <ul class="advantages-sublist">
                   <li class="advantages-sublist__item">
-                    <h3 class="advantages-sublist__title advantages-sublist__title--house">Жилье</h3>
+                    <svg class="advantages-sublist__icon advantages-sublist__icon--house" width="39" height="37">
+                      <use xlink:href="img/sprite.svg#icon-house"></use>
+                    </svg>
+                    <h3 class="advantages-sublist__title">Жилье</h3>
                     <p class="advantages-sublist__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </li>
                   <li class="advantages-sublist__item">
-                    <h3 class="advantages-sublist__title advantages-sublist__title--food">Еда</h3>
+                    <svg class="advantages-sublist__icon advantages-sublist__icon--food" width="40" height="35">
+                      <use xlink:href="img/sprite.svg#icon-food"></use>
+                    </svg>
+                    <h3 class="advantages-sublist__title">Еда</h3>
                     <p class="advantages-sublist__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                   </li>
                   <li class="advantages-sublist__item">
-                    <h3 class="advantages-sublist__title advantages-sublist__title--presents">Сувениры</h3>
+                    <svg class="advantages-sublist__icon advantages-sublist__icon--presents" width="32" height="38">
+                      <use xlink:href="img/sprite.svg#icon-presents"></use>
+                    </svg>
+                    <h3 class="advantages-sublist__title">Сувениры</h3>
                     <p class="advantages-sublist__description">Не только китайского, но и местного производства!</p>
                   </li>
                 </ul>
@@ -105,9 +117,9 @@
                     <p class="advantages__item-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                   </div>
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/advantages-2-desktop.png 1x, img/advantages-2-desktop@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/advantages-2-tablet.png 1x, img/advantages-2-tablet@2x.png 2x">
-                    <img  class="advantages__item-bridge" src="img/advantages-2-mobile.png" width="320" height="260" srcset="img/advantages-2-mobile@2x.png 2x" alt="Мост дьявола.">
+                    <source media="(min-width: 1200px)" srcset="img/advantages-2-desktop.jpg 1x, img/advantages-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/advantages-2-tablet.jpg 1x, img/advantages-2-tablet@2x.jpg 2x">
+                    <img  class="advantages__item-bridge" src="img/advantages-2-mobile.jpg" width="320" height="260" srcset="img/advantages-2-mobile@2x.jpg 2x" alt="Мост дьявола.">
                   </picture>
                 </div>
               </li>
@@ -171,7 +183,9 @@
             <div class="main-footer__copyright copyright" tabindex="1">
               <span class="copyright__text">Разработано</span>
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <svg class="copyright__logo" width="28" height="33" viewBox="0 0 28 33" xmlns="http://www.w3.org/2000/svg"><path d="M14.15.25h-.1L.5 1.59v23.63l13.55 7.66 13.45-7.66V1.6L14.15.25ZM25.6 11.83l-11.54-6.5v-.1h-.1l-.1-.1v.1L2.4 11.83V3.22l11.54-1.15 11.64 1.15v8.6ZM13.95 6.76l11.54 6.4-4.51 2.5-7.13-4.02v1.33l5.92 3.35-.9.48-5.02-2.87v1.34l3.81 2.2-.8.48-3.01-1.72v1.34l1.9 1.05-1.8 1.05-11.44-6.4 11.44-6.51ZM2.41 14.7l11.44 6.5v.96l-7.93-4.5V19l8.03 4.6v1.05l-8.03-4.5v1.34l8.03 4.6 8.13-4.7v-4.97l3.41-1.91v9.56l-11.54 6.6-11.54-6.5V14.7Z"/></svg>
+                <svg class="copyright__logo" width="28" height="33" viewBox="0 0 28 33" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.15.25h-.1L.5 1.59v23.63l13.55 7.66 13.45-7.66V1.6L14.15.25ZM25.6 11.83l-11.54-6.5v-.1h-.1l-.1-.1v.1L2.4 11.83V3.22l11.54-1.15 11.64 1.15v8.6ZM13.95 6.76l11.54 6.4-4.51 2.5-7.13-4.02v1.33l5.92 3.35-.9.48-5.02-2.87v1.34l3.81 2.2-.8.48-3.01-1.72v1.34l1.9 1.05-1.8 1.05-11.44-6.4 11.44-6.51ZM2.41 14.7l11.44 6.5v.96l-7.93-4.5V19l8.03 4.6v1.05l-8.03-4.5v1.34l8.03 4.6 8.13-4.7v-4.97l3.41-1.91v9.56l-11.54 6.6-11.54-6.5V14.7Z"/>
+                </svg>
               </a>
             </div>
         </div>
