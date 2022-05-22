@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sedona | Форма отзыва</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
@@ -104,7 +104,7 @@
             </div>
             <fieldset class="form__filter-group review__emotions">
               <legend class="form__legend">
-                <span class="review__title">Ваше общее впечатление:</span>
+                <span class="review__title review__title--emotions">Ваше общее впечатление:</span>
               </legend>
               <ul class="form__list list-emotions">
                 <li class="form__item">
@@ -139,14 +139,14 @@
                   <label class="form__alternative">
                     <input class="visually-hidden form__alternative-input" type="checkbox" name="bridge" checked>
                     <span class="form__mark" tabindex="0"></span>
-                    <span class="form__alternative-label">Мост дьявола</span>
+                    <span class="form__alternative-label">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__alternative">
                     <input class="visually-hidden form__alternative-input" type="checkbox" name="mountain" checked>
                     <span class="form__mark" tabindex="0"></span>
-                    <span class="form__alternative-label">Гора-колокол</span>
+                    <span class="form__alternative-label">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="form__item">
@@ -171,10 +171,12 @@
               <textarea class="form__emotions" placeholder="Опишите подробно все свои восторги" name="comment-emotions" id="comment-emotions"></textarea>
             </label>
             </fieldset>
-            <button class="button form__button" type="submit">Отправить отзыв</button>
-            <small class="form__footnote">
-              * — обязательные поля
-            </small>
+            <div class="form__button-wrapper">
+              <button class="button form__button" type="submit">Отправить отзыв</button>
+              <small class="form__footnote">
+                * — обязательные поля
+              </small>
+            </div>
           </form>
           </section>
       </main>
