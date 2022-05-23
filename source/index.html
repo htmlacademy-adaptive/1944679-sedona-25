@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sedona | Главная</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
@@ -62,7 +62,7 @@
         <section class="banner">
           <h2 class="visually-hidden">Баннер</h2>
           <div class="banner__background">
-            <img  class="banner__image" src="img/text-banner-mobile.svg" width="282" height="389" alt="Добро пожаловать в Седону.">
+            <img  class="banner__image" src="img/text-banner-mobile.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
           </div>
           <b class="banner__description">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
         </section>
@@ -91,8 +91,8 @@
                     <svg class="advantages-sublist__icon advantages-sublist__icon--house" width="39" height="37">
                       <use xlink:href="img/sprite.svg#icon-house"></use>
                     </svg>
-                    <h3 class="advantages-sublist__title">Жилье</h3>
-                    <p class="advantages-sublist__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                      <h3 class="advantages-sublist__title">Жилье</h3>
+                      <p class="advantages-sublist__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </li>
                   <li class="advantages-sublist__item">
                     <svg class="advantages-sublist__icon advantages-sublist__icon--food" width="40" height="35">
@@ -106,15 +106,15 @@
                       <use xlink:href="img/sprite.svg#icon-presents"></use>
                     </svg>
                     <h3 class="advantages-sublist__title">Сувениры</h3>
-                    <p class="advantages-sublist__description">Не только китайского, но и местного производства!</p>
+                    <p class="advantages-sublist__description advantages-sublist__presents">Не только китайского, но и местного производства!</p>
                   </li>
                 </ul>
               </li>
               <li class="advantages__item">
                 <div class="advantages__item-wrapper-2">
                   <div class="advantages__item-text">
-                    <h3 class="advantages__title">Там есть мост дьявола</h3>
-                    <p class="advantages__item-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                    <h3 class="advantages__title advantages__title-bridge">Там есть мост дьявола</h3>
+                    <p class="advantages__item-description advantages__item-description-bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                   </div>
                   <picture>
                     <source media="(min-width: 1200px)" srcset="img/advantages-2-desktop.jpg 1x, img/advantages-2-desktop@2x.jpg 2x">
@@ -126,7 +126,7 @@
             </ol>
             <ol class="advantages__list-continuation">
                 <li class="advantages__item-continuation">
-                  <h3 class="advantages__title advantages__title--color">Небольшая площадь</h3>
+                  <h3 class="advantages__title advantages__title--color advantages__title-square">Небольшая площадь</h3>
                   <p class="advantages__item-description advantages__item-description--color">Все интересные места находятся очень близко</p>
                 </li>
                 <li class="advantages__item-continuation">
@@ -144,7 +144,10 @@
           <div class="reservation__wrapper">
             <h2 class="visually-hidden">Бронирование</h2>
             <span class="reservation__title">Заинтересовались?</span>
-            <p class="reservation__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="reservation__description">
+              <span class="reservation__description-line">Укажите предполагаемые даты поездки,</span>
+              <span>и мы покажем вам лучшие предложения гостиниц в Седоне</span>
+            </p>
             <div class="reservation__button button" tabindex="1">
               <a class="button__title" href="#">Найти гостиницу</a>
             </div>

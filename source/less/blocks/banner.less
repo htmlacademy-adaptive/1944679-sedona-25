@@ -45,6 +45,8 @@
 }
 
 .banner__image {
+  padding-top: 90px;
+  padding-bottom: 83px;
   display: block;
   margin: 0 auto;
 
@@ -55,17 +57,29 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 40%;
+    padding-top: 79px;
+    width: 38%;
   }
 }
 
 .banner__description {
   display: block;
-  padding-top: 32px;
+  padding: 34px 30px 7px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    width: 483px;
+    margin: 13px auto 0;
+    letter-spacing: 0.3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 27px
+  }
 }
