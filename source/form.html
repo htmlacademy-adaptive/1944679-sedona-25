@@ -20,6 +20,8 @@
     <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
+    <link rel="preload" href="/fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <div class="container">
@@ -90,15 +92,15 @@
               </legend>
               <label class="form__line">
                 <span class="form__subtitle">Контактный телефон*:</span>
-                <div class="form__input-phone">
+                <span class="form__input-phone">
                 <input class="form__input" placeholder="Введите телефон" type="tel" name="comment-phone" required>
-                </div>
+                </span>
               </label>
               <label class="form__line">
               <span class="form__subtitle">Электронная почта*:</span>
-                <div class="form__input-email">
+                <span class="form__input-email">
               <input class="form__input" placeholder="Введите email" type="email" name="comment-email" required>
-                </div>
+                </span>
               </label>
             </fieldset>
             </div>
@@ -227,8 +229,8 @@
       </div>
       <div class="modal-container modal-container--close-review">
         <div class="modal-review modal">
-          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-          <p class="modal__text">
+          <h2 class="modal__title modal__title--review">Ваш отзыв отправлен!</h2>
+          <p class="modal__review-text">
             Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
           </p>
           <div class="modal-review__button-wrapper">
