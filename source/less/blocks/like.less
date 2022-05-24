@@ -2,17 +2,17 @@
   font-weight: 700;
 }
 
-.like__icon path {
-  @media (min-width: @desktop-width) {
-    fill: rgba(255, 255, 255, 1);
-    opacity: 1;
-  }
-}
-
 .like__icon {
   padding-right: 10px;
 
   @media (min-width: @tablet-width) {
     padding-right: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    fill: rgba(255, 255, 255, 1);
+    padding-right: 0;
+    margin-bottom: 2px;
+    margin-right: 5px;
   }
 }
