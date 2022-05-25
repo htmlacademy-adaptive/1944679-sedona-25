@@ -1,0 +1,20 @@
+.main-header {
+  position: relative;
+  background-color: #ffffff;
+  height: 56px;
+}
+
+.main-header__logo {
+  width: 185px;
+  display: block;
+  margin: 0 auto;
+
+  &:focus {
+    outline: 2px solid #0b5ba3;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    z-index: 5;
+  }
+}

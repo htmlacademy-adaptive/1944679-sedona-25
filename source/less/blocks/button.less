@@ -1,0 +1,37 @@
+.button {
+  border: none;
+  background-color: @background;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  height: 58px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669EC0;
+  }
+
+  &:active {
+    background-color: #5496BD;
+  }
+
+  &:disabled {
+    background-color: #E5E5E5;
+  }
+}
+
+.button__title {
+  text-decoration: none;
+  color: #ffffff;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.button:active .button__title {
+    opacity: 30%;
+}

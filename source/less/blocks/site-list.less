@@ -1,0 +1,133 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.site-list::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+
+  @media (min-width: @tablet-width) {
+    content: "";
+    background: none;
+  }
+}
+
+.site-list__item {
+  text-align: center;
+  vertical-align: middle;
+  height: 55px;
+  padding-top: 17px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  cursor: pointer;
+
+  @media (max-width: @mobile-width-only) {
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+    }
+
+    &:active .site-list__link {
+      color: fade(#ffffff, 30%);
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.site-list__item:nth-child(1) {
+  @media (min-width: @tablet-width) {
+    padding-right: 27px;
+    padding-left: 49px;
+    margin-right: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 92px;
+    padding-right: 21px;
+  }
+}
+
+.site-list__item:nth-child(2) {
+  @media (min-width: @tablet-width) {
+    padding-right: 25px;
+    margin-right: 182px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 20px;
+    margin-right: 240px;
+    padding-left: 6px
+  }
+}
+
+.site-list__item:nth-child(3) {
+  @media (min-width: @tablet-width) {
+    padding-right: 25px;
+    margin-right: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 33px;
+  }
+}
+
+.site-list__item:last-child {
+  @media (min-width: @desktop-width) {
+    padding-right: 71px;
+  }
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  &:focus {
+    outline: 2px solid #0b5ba3;
+  }
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    font-size: 14px;
+    line-height: 21px;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
+  }
+}
+
+.site-list__link--current {
+  color: #766357;
+}
