@@ -90,7 +90,8 @@
   position: relative;
 }
 
-.form__input-phone, .form__input-email {
+.form__input-phone,
+.form__input-email {
   position: relative;
   display: block;
 }
@@ -138,6 +139,7 @@
     min-width: 185px;
     margin-right: 45px;
   }
+
   @media (min-width: @desktop-width) {
     margin-right: 20px;
   }
@@ -212,7 +214,7 @@
 .form__alternative-input[type="radio"]:checked + .form__mark::after {
   position: absolute;
   top: -2px;
-  left:-1px;
+  left: -1px;
   width: 46px;
   height: 46px;
   content: "";
@@ -294,6 +296,7 @@
     margin-top: 20px;
     margin-bottom: 46px;
   }
+
   @media (min-width: @desktop-width) {
     width: 768px;
     margin: 18px auto 46px;
@@ -309,8 +312,8 @@
 
 .form__wrapper {
   @media (min-width: @tablet-width) {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
