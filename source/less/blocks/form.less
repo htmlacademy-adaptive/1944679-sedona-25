@@ -60,17 +60,13 @@
   margin-bottom: 16px;
   box-sizing: border-box;
 
-  &:focus {
-    outline: 2px solid #0b5ba3;
-  }
-
   &:hover {
     background-color: #e5e5e5;
   }
 
-  &:active {
+  &:focus {
     background-color: #ffffff;
-    border: 4px solid #e5e5e5;
+    outline: 4px solid #e5e5e5;
   }
 
   &::placeholder {
@@ -126,14 +122,14 @@
   }
 }
 
+.form__alternative:active .form__alternative-label {
+    color: rgba(0, 0, 0, 1)
+}
+
 .form__alternative {
   position: relative;
   display: block;
   cursor: pointer;
-
-  &:active {
-    opacity: 30%;
-  }
 
   @media (min-width: @tablet-width) {
     min-width: 185px;
@@ -196,6 +192,7 @@
   }
 
   &:active {
+    opacity: 30%;
     outline: none;
   }
 }
@@ -308,6 +305,12 @@
   padding: 24px 0 20px 0;
   margin: 0;
   text-align: center;
+}
+
+@-moz-document url-prefix() {
+  .form__legend {
+    margin: 0 auto;
+  }
 }
 
 .form__wrapper {
