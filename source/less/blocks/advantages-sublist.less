@@ -5,6 +5,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
     padding-top: 0;
     margin-bottom: 20px;
@@ -44,43 +45,42 @@
   }
 }
 
-.advantages-sublist__item:nth-child(1) .advantages-sublist__title {
+.advantages-sublist__item:nth-child(3n + 1) .advantages-sublist__title {
   @media (min-width: @tablet-width) {
     padding-top: 8px;
-    padding-right: 9px;
+    padding-right: 1px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 57px;
-    padding-top: 10px;
-    padding-right: 1px;
+    padding-left: 1px;
+    padding-top: 7px;
   }
 }
 
-.advantages-sublist__item:nth-child(2) .advantages-sublist__title {
+.advantages-sublist__item:nth-child(3n + 2) .advantages-sublist__title {
   @media (min-width: @tablet-width) {
     padding-top: 8px;
-    padding-right: 32px;
+    padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 6px;
-    padding-right: 45px;
+    padding-right: 6px;
   }
 }
 
-.advantages-sublist__item:nth-child(3) .advantages-sublist__title {
+.advantages-sublist__item:nth-child(3n) .advantages-sublist__title {
   padding-top: 8px;
   margin-top: 0;
 
   @media (min-width: @tablet-width) {
     padding-top: 28px;
-    padding-left: 15px;
+    padding-left: 35px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 29px;
-    padding-left: 53px;
+    padding-top: 26px;
+    padding-left: 75px;
   }
 }
 
@@ -99,14 +99,14 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 55px;
-    padding-left: 5px;
+    padding-left: 13px;
     width: 75px;
     height: 72px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 55px;
-    padding-left: 76px;
+    padding-left: 12px;
   }
 }
 
@@ -118,13 +118,13 @@
     width: 76px;
     height: 68px;
     padding-top: 58px;
-    padding-right: 37px;
+    padding-right: 5px;
     padding-left: 3px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 59px;
-    padding-right: 25px;
+    padding-top: 57px;
+    padding-right: 1px;
     padding-left: 0;
   }
 }
@@ -136,14 +136,14 @@
     padding-top: 45px;
     width: 64px;
     height: 75px;
-    padding-right: 23px;
+    padding-right: 3px;
     padding-left: 13px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 52px;
     padding-right: 13px;
-    padding-left: 0;
+    padding-left: 22px;
   }
 }
 
@@ -172,10 +172,7 @@
 .advantages-sublist__item {
   @media (min-width: @tablet-width) {
     text-align: center;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: 82px;
+    width: 33%;
   }
 }
 
@@ -188,7 +185,7 @@
   }
 }
 
-.advantages-sublist__item:nth-child(1) .advantages-sublist__description {
+.advantages-sublist__item:nth-child(3n + 1) .advantages-sublist__description {
   @media (min-width: @tablet-width) {
     width: 170px;
     padding-right: 54px;
@@ -197,34 +194,34 @@
 
   @media (min-width: @desktop-width) {
     width: 280px;
-    padding: 10px 0 0 60px;
+    padding: 11px 6px 0 60px;
   }
 }
 
-.advantages-sublist__item:nth-child(2) .advantages-sublist__description {
+.advantages-sublist__item:nth-child(3n + 2) .advantages-sublist__description {
   padding-right: 15px;
   padding-left: 49px;
 
   @media (min-width: @tablet-width) {
     width: 157px;
-    padding-left: 39px;
-    padding-right: 70px;
+    padding-left: 51px;
+    padding-right: 45px;
   }
 
   @media (min-width: @desktop-width) {
     width: 300px;
     padding-top: 13px;
-    padding-left: 30px;
-    padding-right: 50px;
+    padding-left: 54px;
+    padding-right: 30px;
   }
 }
 
-.advantages-sublist__item:last-child .advantages-sublist__description {
+.advantages-sublist__item:nth-child(3n) .advantages-sublist__description {
   padding-left: 42px;
   padding-bottom: 38px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 11px;
+    padding-left: 40px;
     padding-right: 20px;
     margin-bottom: 55px;
     width: 192px;
@@ -233,6 +230,6 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 12px;
-    padding-left: 30px;
+    padding-left: 120px;
   }
 }

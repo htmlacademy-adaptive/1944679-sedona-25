@@ -152,11 +152,31 @@
   border-radius: 4px;
 }
 
-.form__alternative-input[type="checkbox"] + .form__mark {
+.form__alternative-input[type="radio"] {
+  position: absolute;
+  top: -12px;
+  height: 44px;
+  width: 44px;
+  left: 0;
+
   &:focus {
     outline: 2px solid #0b5ba3;
   }
+}
 
+.form__alternative-input[type="checkbox"] {
+  position: absolute;
+  top: -11px;
+  height: 42px;
+  width: 42px;
+  left: 2px;
+
+  &:focus {
+    outline: 2px solid #0b5ba3;
+  }
+}
+
+.form__alternative-input[type="checkbox"] + .form__mark {
   &:hover {
     background-color: #e5e5e5;
   }
@@ -263,6 +283,7 @@
 .form__emotions {
   display: block;
   width: 100%;
+  resize: none;
   min-height: 150px;
   border: none;
   background-color: #f2f2f2;
